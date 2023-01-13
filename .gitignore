@@ -7,3 +7,7 @@ node_modules
 .env
 
 .pnpm-store
+
+prisma/*.db
+prisma/*.db-journal
+.wrangler/state/d1/DB.sqlite3
