@@ -1,0 +1,13 @@
+services:
+
+  app:
+    build:
+      context: .
+    entrypoint: /app/scripts/docker-entrypoint.sh
+    command: pnpm run dev
+    volumes:
+      - .:/app:cached
+    ports:
+      - 3000:3000
+    tty: false
+    stdin_open: true
