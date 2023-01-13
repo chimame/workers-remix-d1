@@ -1,17 +1,20 @@
-# Welcome to Remix!
+# What is this?
 
-- [Remix Docs](https://remix.run/docs)
+Sample code to get data from [Cloudflare D1](https://developers.cloudflare.com/d1/) in [Remix](https://remix.run/docs).
+
+## Motivation
+
+To access Cloudflare D1, we need to write SQL. However, we would be even happier if we could retrieve data as easily as the O/R mapper.
+So I am trying to build a query with [kysely](https://github.com/koskimas/kysely) to get the type at the same time.
+
+If you look at [test.tsx](./app/routes/test.tsx), you will see that the data to be retrieved from D1 is typed.
 
 ## Development
 
-You will be utilizing Wrangler for local development to emulate the Cloudflare runtime. This is already wired up in your package.json as the `dev` script:
-
 ```sh
-# start the remix dev server and wrangler
-npm run dev
+$ docker compose up --build
+#=> open http://localhost:3000/test
 ```
-
-Open up [http://127.0.0.1:8788](http://127.0.0.1:8788) and you should be ready to go!
 
 ## Deployment
 
