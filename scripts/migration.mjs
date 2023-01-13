@@ -15,3 +15,5 @@ for (let i =0; i < packages.length; i++) {
 }
 
 await $`pnpm wrangler d1 migrations apply --local ${argv.dbName ? argv.dbName : 'mydb'}`
+
+await $`DATABASE_URL=./.wrangler/state/d1/DB.sqlite3 pnpm kysely-codegen`
