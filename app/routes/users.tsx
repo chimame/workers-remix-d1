@@ -6,7 +6,7 @@ export const loader = async ({ context }: LoaderArgs) => {
   const users = await client(context.DB).selectFrom('User').selectAll().execute()
 
   // Type is not set unless defined in generic.(ex all<T>())
-  //const data = await context.DB.prepare('SELECT * FROM User').all()
+  //const data = await context.DB.prepare('SELECT * FROM User').all<{id: number, email: string, name: string | null}>()
   //console.log('data.results', data.results)
   // #=> [
   //  { id: <number>, email: <string>, name: <string | null> },
@@ -43,8 +43,18 @@ const Users = () => {
   return (
     <div>
       <Form method="post">
-        <input name='email' required type='email' />
-        <input name='name' />
+        <div>
+          <label>
+            email:
+            <input name='email' required type='email' />
+          </label>
+        </div>
+        <div>
+          <label>
+            name:
+            <input name='name' />
+          </label>
+        </div>
         <button type="submit">create</button>
       </Form>
       <div>user count: {users.length} users</div>
