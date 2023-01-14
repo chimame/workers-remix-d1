@@ -3,6 +3,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
+    "deploy": "wrangler d1 migrations apply mydb && remix build && wrangler pages dev ./public",
     "dev:remix": "remix watch",
     "dev:wrangler": "cross-env NODE_ENV=development pnpm run wrangler:page",
     "dev:studio": "DATABASE_URL=file:../.wrangler/state/d1/DB.sqlite3 prisma studio",
