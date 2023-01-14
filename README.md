@@ -7,7 +7,7 @@ Sample code to get data from [Cloudflare D1](https://developers.cloudflare.com/d
 To access Cloudflare D1, we need to write SQL. However, we would be even happier if we could retrieve data as easily as the O/R mapper.
 So I am trying to build a query with [kysely](https://github.com/koskimas/kysely) to get the type at the same time.
 
-If you look at [test.tsx](./app/routes/test.tsx), you will see that the data to be retrieved from D1 is typed.
+If you look at [users.tsx](./app/routes/users.tsx), you will see that the data to be retrieved from D1 is typed.
 
 ## Development
 
