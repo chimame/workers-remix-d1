@@ -9,6 +9,7 @@ services:
       - .:/app:cached
     ports:
       - 3000:3000
+      - 8002:8002
       - 5555:5555
     tty: false
     stdin_open: true
