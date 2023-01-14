@@ -14,21 +14,21 @@
     "wrangler:page": "wrangler pages dev ./public --local --persist --port 3000"
   },
   "dependencies": {
-    "@remix-run/cloudflare": "^1.10.0",
-    "@remix-run/cloudflare-pages": "^1.10.0",
-    "@remix-run/react": "^1.10.0",
+    "@remix-run/cloudflare": "^1.10.1",
+    "@remix-run/cloudflare-pages": "^1.10.1",
+    "@remix-run/react": "^1.10.1",
     "better-sqlite3": "^8.0.1",
     "cross-env": "^7.0.3",
     "kysely": "^0.23.3",
-    "kysely-d1": "^0.0.6",
+    "kysely-d1": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.18.0",
     "@prisma/client": "^4.8.1",
-    "@remix-run/dev": "^1.10.0",
-    "@remix-run/eslint-config": "^1.10.0",
+    "@remix-run/dev": "^1.10.1",
+    "@remix-run/eslint-config": "^1.10.1",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "eslint": "^8.27.0",
