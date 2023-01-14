@@ -13,7 +13,7 @@ If you look at [users.tsx](./app/routes/users.tsx), you will see that the data t
 
 ```sh
 $ docker compose up --build
-#=> open http://localhost:3000/test
+#=> open http://localhost:3000/users
 ```
 
 ## Deployment
